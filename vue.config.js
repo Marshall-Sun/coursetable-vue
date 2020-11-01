@@ -1,3 +1,4 @@
 module.exports = {
-  publicPath: process.env.NODE_ENV === "production" ? "/coursetable-vue" : "/"
+  publicPath: "/coursetable-vue/",
+  outputDir: "docs",
 };

@@ -2,6 +2,7 @@
   <github-button
     href="https://github.com/Marshall-Sun/coursetable-vue"
     data-icon="octicon-star"
+    data-size="large"
     aria-label="Star Marshall-Sun/coursetable-vue on GitHub"
     >Star</github-button
   >

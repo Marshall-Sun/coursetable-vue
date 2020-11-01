@@ -16,7 +16,7 @@
           <a href="https://cn.vuejs.org/">
             <img
               width="55px"
-              src="https://raw.githubusercontent.com/Marshall-Sun/CDN/master/coursetable/vue.svg"
+              src="https://cdn.jsdelivr.net/gh/marshall-sun/CDN@1.6/coursetable/vue.png"
               alt="Vue.js"
             />
           </a>
@@ -46,7 +46,7 @@ export default {
 
 .ant-layout-content {
   background-color: #41b883;
-  background-image: url("https://raw.githubusercontent.com/Marshall-Sun/CDN/master/coursetable/arches.png");
+  background-image: url("https://cdn.jsdelivr.net/gh/marshall-sun/CDN@1.6/coursetable/arches.png");
   padding-bottom: 64px;
 }
 
@@ -67,7 +67,7 @@ span.ant-cascader-picker {
 
 .ant-layout .ant-layout-footer {
   background:
-    url("https://raw.githubusercontent.com/Marshall-Sun/CDN/master/coursetable/arches.png")
+    url("https://cdn.jsdelivr.net/gh/marshall-sun/CDN@1.6/coursetable/arches.png")
     rgba(0, 0, 0, 0.55);
   background-blend-mode: multiply;
   color: black;

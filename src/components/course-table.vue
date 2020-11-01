@@ -155,14 +155,14 @@ export default {
   created() {
     this.$http
       .get(
-        "https://raw.githubusercontent.com/Marshall-Sun/CDN/master/coursetable/semesterList.json"
+        "https://cdn.jsdelivr.net/gh/marshall-sun/CDN@latest/coursetable/semesterList.json"
       )
       .then((json) => {
         this.initSemester(json);
       });
     this.$http
       .get(
-        "https://raw.githubusercontent.com/Marshall-Sun/CDN/master/coursetable/myCourse.json"
+        "https://cdn.jsdelivr.net/gh/marshall-sun/CDN@latest/coursetable/myCourse.json"
       )
       .then((json) => {
         this.initCourse(json);
@@ -243,7 +243,7 @@ export default {
 <style>
 .outcontent {
   background-color: #41b883;
-  background-image: url("https://raw.githubusercontent.com/Marshall-Sun/CDN/master/coursetable/arches.png");
+  background-image: url("https://cdn.jsdelivr.net/gh/marshall-sun/CDN@1.6/coursetable/arches.png");
   position: relative;
   bottom: 17px;
   height: 19px;
@@ -263,7 +263,7 @@ td div {
   > th {
   text-align: center;
   background-color: #41b883;
-  background-image: url("https://raw.githubusercontent.com/Marshall-Sun/CDN/master/coursetable/arches.png");
+  background-image: url("https://cdn.jsdelivr.net/gh/marshall-sun/CDN@1.6/coursetable/arches.png");
 }
 
 .ant-table-middle
@@ -281,7 +281,7 @@ td div {
 
 .ant-table-middle {
   background-color: #41b883;
-  background-image: url("https://raw.githubusercontent.com/Marshall-Sun/CDN/master/coursetable/batthern.png");
+  background-image: url("https://cdn.jsdelivr.net/gh/marshall-sun/CDN@1.6/coursetable/batthern.png");
 }
 
 .ant-table-bordered div.ant-table-body > table {

@@ -1,11 +1,6 @@
 <template>
   <div>
-    <a-cascader
-      :options="options"
-      :default-value="values"
-      @change="onChange"
-      :allowClear="false"
-    />
+    <a-cascader :options="options" :default-value="values" @change="onChange" :allowClear="false" />
     <a-table
       :data-source="data"
       size="middle"
@@ -154,16 +149,12 @@ export default {
   },
   created() {
     this.$http
-      .get(
-        "https://cdn.jsdelivr.net/gh/marshall-sun/CDN@latest/coursetable/semesterList.json"
-      )
+      .get("https://cdn.jsdelivr.net/gh/marshall-sun/CDN@latest/coursetable/semesterList.json")
       .then((json) => {
         this.initSemester(json);
       });
     this.$http
-      .get(
-        "https://cdn.jsdelivr.net/gh/marshall-sun/CDN@latest/coursetable/myCourse.json"
-      )
+      .get("https://cdn.jsdelivr.net/gh/marshall-sun/CDN@latest/coursetable/myCourse.json")
       .then((json) => {
         this.initCourse(json);
       });
@@ -242,8 +233,7 @@ export default {
 
 <style>
 .outcontent {
-  background-color: #41b883;
-  background-image: url("https://cdn.jsdelivr.net/gh/marshall-sun/CDN@1.6/coursetable/arches.png");
+  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
   position: relative;
   bottom: 17px;
   height: 19px;
@@ -262,8 +252,7 @@ td div {
   > tr
   > th {
   text-align: center;
-  background-color: #41b883;
-  background-image: url("https://cdn.jsdelivr.net/gh/marshall-sun/CDN@1.6/coursetable/arches.png");
+  background: transparent;
 }
 
 .ant-table-middle
@@ -280,8 +269,7 @@ td div {
 }
 
 .ant-table-middle {
-  background-color: #41b883;
-  background-image: url("https://cdn.jsdelivr.net/gh/marshall-sun/CDN@1.6/coursetable/batthern.png");
+  background: transparent;
 }
 
 .ant-table-bordered div.ant-table-body > table {
@@ -323,8 +311,8 @@ thead.ant-table-thead > tr > th {
 }
 
 tbody > .ant-table-row > td:not(.leftbody):hover {
-  box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12),
-    0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08),
+    0 9px 28px 8px rgba(0, 0, 0, 0.05);
   z-index: 100;
   position: relative;
 }

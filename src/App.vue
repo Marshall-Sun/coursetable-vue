@@ -45,9 +45,7 @@ export default {
 }
 
 .ant-layout-content {
-  background-color: #41b883;
-  background-image: url("https://cdn.jsdelivr.net/gh/marshall-sun/CDN@1.6/coursetable/arches.png");
-  padding-bottom: 64px;
+  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
 }
 
 #app h1 {
@@ -66,9 +64,7 @@ span.ant-cascader-picker {
 }
 
 .ant-layout .ant-layout-footer {
-  background:
-    url("https://cdn.jsdelivr.net/gh/marshall-sun/CDN@1.6/coursetable/arches.png")
-    rgba(0, 0, 0, 0.55);
+  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
   background-blend-mode: multiply;
   color: black;
 }
